@@ -6,34 +6,6 @@ Reachinbox is an intelligent full-stack email system that fetches, categorizes, 
 When running locally, the frontend is accessible at:
 http://localhost:3000/emails
 
-**📂 Project Structure**
-
-Reachinbox-main/
-├── email-onebox/               # Backend (Node.js + TypeScript)
-│   ├── src/
-│   │   ├── config/             # Environment configuration
-│   │   ├── models/             # Email types (`email.types.ts`)
-│   │   ├── routes/             # API routes (`reply.ts`)
-│   │   ├── services/           # Core logic
-│   │   │   ├── aiCategorizer.ts
-│   │   │   ├── aiReply.ts
-│   │   │   ├── elastic.ts
-│   │   │   ├── imap.ts
-│   │   │   ├── slack.ts
-│   │   │   ├── webhook.ts
-│   │   │   └── logger.ts
-│   ├── package.json
-│   └── tsconfig.json
-│
-├── reachinbox-frontend/        # Frontend (Next.js + Tailwind CSS)
-│   ├── app/
-│   │   ├── emails/page.tsx     # Inbox UI
-│   │   ├── globals.css
-│   │   └── layout.tsx
-│   ├── public/
-│   ├── package.json
-│   └── tsconfig.json
-
 **✨ Key Features**
 🔁 Real-Time IMAP Syncing using IDLE (no cron jobs!)
 🧠 AI-Powered Email Categorization with Groq's LLaMA-3
